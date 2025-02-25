@@ -1,0 +1,16 @@
+{
+  "name": "electron-windows-app",
+  "version": "1.0.0",
+  "description": "A mini project showcasing desktop application development with Electron.js, specifically optimized for Windows users. Includes setup, UI implementation, and packaging for seamless Windows deployment.",
+  "main": "src/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx electron ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^34.2.0"
+  }
+}
