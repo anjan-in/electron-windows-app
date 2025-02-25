@@ -43,30 +43,48 @@
 
             <!-- File Explorer Section -->
             <div id="fileExplorer" class="tab-pane fade">
-                <h3>File Explorer</h3>
-                <button class="btn btn-secondary" id="openFile">Open File</button>
-                <p id="filePath" class="mt-2"></p>
+                <div class="container mt-4">
+                    <h3>📂 File Explorer</h3>
+                    <button id="browseFile" class="btn btn-primary">Browse File</button>
+                    <p id="filePath" class="mt-2"></p>
+                </div>
             </div>
 
             <!-- Image Viewer Section -->
             <div id="imageViewer" class="tab-pane fade">
-                <h3>Image Viewer</h3>
-                <button class="btn btn-info" id="openImage">Choose Image</button>
-                <img id="imageDisplay" class="img-fluid mt-3" style="max-width: 100%;" alt="Selected Image">
+                <div class="container mt-4">
+                    <h3>🖼 Image Viewer</h3>
+                    <button id="selectImage" class="btn btn-primary">Select Image</button>
+                    <div class="mt-3">
+                        <img id="imageDisplay" src="" class="img-fluid" style="max-height: 300px; display: none;">
+                    </div>
+                </div>
             </div>
 
             <!-- Clipboard Manager Section -->
             <div id="clipboard" class="tab-pane fade">
-                <h3>Clipboard Manager</h3>
-                <button class="btn btn-warning" id="copyClipboard">Copy to Clipboard</button>
-                <p id="clipboardText" class="mt-2">Your copied text will appear here.</p>
+                <div class="container mt-4">
+                    <h3>📋 Clipboard Manager</h3>
+                    <button id="fetchClipboard" class="btn btn-primary">Fetch Clipboard</button>
+                    <ul id="clipboardHistory" class="list-group mt-3"></ul>
+                </div>
             </div>
 
             <!-- System Info Section -->
             <div id="systemInfo" class="tab-pane fade">
-                <h3>System Info</h3>
-                <button class="btn btn-dark" id="getSystemInfo">Get System Info</button>
-                <pre id="systemData" class="mt-2"></pre>
+                <div class="container mt-4">
+                    <h3>💻 System Info Dashboard</h3>
+                    <button id="refreshSystemInfo" class="btn btn-primary">Refresh</button>
+                    <div class="mt-3">
+                        <ul class="list-group">
+                            <li class="list-group-item"><strong>CPU:</strong> <span id="cpu"></span></li>
+                            <li class="list-group-item"><strong>Total Memory:</strong> <span id="totalMemory"></span></li>
+                            <li class="list-group-item"><strong>Free Memory:</strong> <span id="freeMemory"></span></li>
+                            <li class="list-group-item"><strong>OS Type:</strong> <span id="osType"></span></li>
+                            <li class="list-group-item"><strong>Uptime:</strong> <span id="uptime"></span></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
